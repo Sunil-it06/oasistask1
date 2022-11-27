@@ -1,0 +1,390 @@
+* {
+    font-family:sans-serif;
+    margin:1px 0px 5px 0px;
+    padding:10px 0px 5px 5px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+html {
+    font-size: 60.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: gray;
+}
+html::-webkit-scrollbar-thumb {
+    background: #ff5722;
+    border-radius: 5rem;
+
+}
+
+.header .btn {
+    margin-top:0;
+}
+
+.logo {
+    font-size: 3.5rem;
+    color:rgb(183, 234, 183);
+    font-weight:bolder;
+    text-align: left;
+}
+.logo i {
+    color:#ff5722;
+    padding-right:0.5rem;
+    text-align: left;
+}
+
+body {
+    overflow-x:hidden;
+    background:gray;
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+.heading {
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.heading span {
+    color:#ff5722;
+    font-size:3rem;
+}
+.heading  h1 {
+    font-size: 4.2rem;
+    color:bisque;
+    text-align:center;
+}
+
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    background:slateblue;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 0.4rem 7%;
+}
+
+
+.header nav {
+    height:68px;
+    display: flex;
+    padding: 0px 50px 0px 100px;
+}
+.header nav ul {
+    display:flex;
+    list-style: none;
+}
+.header nav ul a {
+    color:#ff5722;
+}
+nav ul li {
+    margin:0px 5px;
+}
+nav ul li a {
+    color:#1b1b1b;
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    font-weight:500;
+    letter-spacing: 1px;
+    padding:8px 10px;
+    border-radius:5px;
+}
+nav ul li a:hover {
+    
+    color:#fff;
+    background:rgb(98, 229, 98);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding:1rem 3rem;
+    font-size: 1.7rem;
+    color:red;
+    border:0.5rem solid #ff5722;
+    border-radius: 5rem;
+    cursor:pointer;
+    background:none;
+    transition:0.5s;
+    font-weight: bold;
+}
+.btn:hover {
+    background:greenyellow;
+    color:red;
+}
+
+.home {
+    margin:0 auto;
+    margin-top: 9rem;
+    width:100%;
+    border-radius:1rem;
+    background:linear-gradient(rgb(100 100 100 / 70%),rgba(17, 17, 17, 0.7)), url(shoes2.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    display:flex;
+    min-height:80vh;
+    align-items:center;
+}
+
+.home {
+    margin-top: 7rem;
+}
+.home .content span {
+    font-weight:bolder;
+    font-size:5vw;
+    color:#ff5722;
+    -webkit-text-stroke: 0.1rem #fff;
+    display:block;
+    text-align: center;
+
+}
+.home .content h3 {
+    font-size: 5vw;
+    display: block;
+    color:#fff;
+    text-align: center;
+}
+.home .content p {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size:1.4rem;
+    color:#fff;
+    line-height:2;
+} 
+
+
+.about {
+    display:flex;
+    align-items:left;
+    flex-wrap:wrap;
+    gap: 2rem;
+    margin-top:2rem;
+}
+.about .img-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 42rem;
+    flex:1 1 42rem;
+}
+.about .img-container img {
+    border-radius:1rem;
+    width:100%;
+}
+.about .content {
+    flex: 1 1 42;
+    margin-bottom: 5rem;
+}
+.about .content span {
+    color: red;
+    font-size:3rem;
+}
+ .about .content h3 {
+    color: black;
+    font-size: 4rem;
+    margin-top: 0.5rem;
+}
+.about .content h4 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+.about .content p {
+    padding: 1rem 0;
+    font-size:1.4rem;
+    color:black;
+    line-height: 2;
+}
+.banner .content h3 {
+    font-size: 2.7rem;
+}
+.popular .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.popular .box-container .box {
+    padding:2rem;
+    background:#222;
+    box-shadow:0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius:0.5rem;
+    border:0.1rem solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    flex: 1 1 30rem;
+    position:relative;
+}
+
+.popular .box-container .box img {
+    height:25rem;
+    object-fit:cover;
+    width:100%;
+    border-radius: 0.5rem;
+}
+
+.popular .box-container .box .price {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    background: red;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+.popular .box-container .box h3 {
+    color:#fff;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+.popular .box-container .box .stars i {
+    color: gold;
+    font-size: 1.7rem;
+    padding: 1rem 0.1rem;
+}
+.banner {
+    background: linear-gradient(rgba(17,17,17,0.7),
+    rgba(17,17,17,0.7)),url(shoes3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.banner .content span {
+    font-size:3rem;
+    color:red;
+}
+
+.banner .content h3 {
+    font-size: 4rem;
+    color:#fff;
+    margin-top:1rem;
+}
+
+.banner input {
+    width:100%;
+    max-width: 40rem;
+    padding: 13px 12px;
+    border-radius: 25px;
+}
+
+.footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    padding-bottom: 1rem 0;
+}
+
+.footer .box-container .box .logo {
+    padding-bottom: 1rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color:yellow;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box  p {
+    font-size: 1.4rem;
+    color:blue;
+    padding: 1rem 0; 
+    line-height: 2;
+}
+
+.footer .box-container .box p i {
+    padding-right: 0.5rem;
+    color:black;
+}
+
+.footer .box-container .box .share {
+    padding-top:0rem;
+}
+
+.footer .box-container .box .share a {
+    height: 5.5rem;
+    width: 5.5rem;
+    line-height:4rem;
+    font-size: 2rem;
+    border-radius: 100%;
+    border: 0.5 rem solid black;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    text-align:left;
+    display: block;
+}
+
+.footer .box-container .box .share a:hover {
+    background:#ff5722;
+    color:#111;
+    border: 0.5rem;
+}
+
+.footer .box-container .box .links {
+    font-size: 1.4rem;
+    color:black;
+    padding: 1rem 0;
+    display: block;
+}
+
+.footer .box-container .box .links:hover {
+    color:blue;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+}
+
+.footer .box-container .box .links i {
+    padding-right: 0.5rem;
+    color:green;
+}
+
+.footer .box-container .box form .email {
+    width:100%;
+    border-radius: 5rem;
+    border: 0.2rem solid #ff5722;
+    background: none;
+    font-size: 1.5rem;
+    text-transform: none;
+    color:black;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1.4rem;
+}
+
+.credit {
+    background: #222;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 1rem;
+    color:#fff;
+}
+
+.credit span {
+    color:#ff5722;
+}
